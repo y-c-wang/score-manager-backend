@@ -1,0 +1,25 @@
+[project]
+name = ""
+version = ""
+description = ""
+authors = [
+    {name = "alan910127", email = ""},
+    {name = "y-c-wang", email = ""},
+]
+dependencies = [
+    "fastapi>=0.87.0",
+    "uvicorn>=0.20.0",
+    "deta>=1.1.0",
+]
+requires-python = ">=3.7"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["pdm-pep517>=1.0.0"]
+build-backend = "pdm.pep517.api"
+
+[tool.pdm]
+
+
+[tool.pdm.scripts]
+dev = "uvicorn src.main:app --reload"
