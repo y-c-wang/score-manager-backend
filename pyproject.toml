@@ -22,4 +22,4 @@ build-backend = "pdm.pep517.api"
 
 
 [tool.pdm.scripts]
-dev = "uvicorn src.main:app --reload"
+dev = "uvicorn main:app --reload"
